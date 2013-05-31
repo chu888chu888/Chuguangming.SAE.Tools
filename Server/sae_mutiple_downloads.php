@@ -12,6 +12,4 @@ while ( $ret = $stor->getList($storeapp, "*", 100, $num ) ) {
             $num ++;
         }
 }
-echo "FILE DOWN OVER|";
-echo $num;
 ?>
