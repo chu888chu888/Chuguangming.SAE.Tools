@@ -1,8 +1,8 @@
-<?php
+ï»¿<?php
 $storeapp=$_GET['storeapp'];
 if(""==$storeapp || NULL==$storeapp)
 	die();
-//±éÀúDomainÏÂËùÓÐÎÄ¼þ
+//éåŽ†Domainä¸‹æ‰€æœ‰æ–‡ä»¶
 $stor = new SaeStorage();
  
 $num = 0;
