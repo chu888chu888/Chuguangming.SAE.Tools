@@ -55,9 +55,13 @@ namespace WinUI
             {
                 foreach (string fname in DownFileName)
                 {
-                    
-                    string downloadfileaddress = strStorageUrl + fname;
-                    myWebClient.DownloadFile(downloadfileaddress, Path.GetFileName(fname));
+
+                    if (fname != "")
+                    {
+                        string downloadfileaddress = strStorageUrl + fname;
+                        Debug.Print(downloadfileaddress);
+                        myWebClient.DownloadFile(downloadfileaddress, Path.GetFileName(fname));
+                    }
                 }
             }
             catch(Exception ex)
